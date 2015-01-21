@@ -505,12 +505,6 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
-Private movex, movey As Integer   'ball movement horizontally and vertically
-Private howfar As Integer
-Private PaddleLeftPosition As Integer
-Private PaddleRightPosition As Integer
-Private Points As Integer
-
 
 Private Sub ColorChange_Timer()
 
@@ -569,6 +563,12 @@ Private Sub Label3_Click()
 End Sub
 
 Private Sub lblStart_Click()
+
+   Private movex, movey As Integer   'ball movement horizontally and vertically
+   Private howfar As Integer
+   Private PaddleLeftPosition As Integer
+   Private PaddleRightPosition As Integer
+   Private Points As Integer
 
 Dim random As Integer
 random = Int(2 * Rnd) + 1
